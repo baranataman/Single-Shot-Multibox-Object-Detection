@@ -45,7 +45,7 @@ model = ssd_300(image_size=(img_height, img_width, 3),
                 nms_max_output_size=400)
 
 # Load the trained weights into the model.
-weights_path = Path('weights/VGG_VOC0712_SSD_300x300_iter_120000.h5')
+weights_path = Path('VGG_VOC0712_SSD_300x300_iter_120000.h5')
 model.load_weights(str(weights_path), by_name=True)
 
 
